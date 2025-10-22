@@ -1,0 +1,6 @@
+module full_subracter(
+input wire A,B,Bin,
+output wire D,Bout
+);
+assign D=A^B^Bin;
+assign Bout=(~A&B)|(A^B)&Bin
